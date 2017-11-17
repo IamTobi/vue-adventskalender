@@ -20,19 +20,19 @@
 <script>
 import Door from './components/Door';
 
-let doors = [];
-
-for (let i = 0; i < 24; i++) { 
-  let doorContent = {
-    number: i + 1,
-    title: 'Ich bin Tag ' + (i + 1),
-    text: 'Noch ' + (24 - i) + ' Tage bis Heiligabend'
-  };
-  doors.push(doorContent);
-}
-
 export default {
   data() {
+    let doors = [];
+
+    for (let i = 0; i < 24; i++) { 
+      let doorContent = {
+        number: i + 1,
+        title: 'Ich bin Tag ' + (i + 1),
+        text: 'Noch ' + (24 - i) + ' Tage bis Heiligabend'
+      };
+      doors.push(doorContent);
+    }
+
     return {
       doors: doors
     }
